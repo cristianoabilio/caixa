@@ -1,0 +1,134 @@
+#footer {
+	border-top: 1px solid $color2;
+	
+	.row {
+		display: flex;
+		align-items: stretch;
+		flex-wrap: wrap;
+		padding: 0 15px;
+		&:before,
+		&:after {
+			display: none !important;	
+		}
+		&.no-padding {
+		  padding: 0;
+		}
+		&.center-align {
+			.columns {
+				align-items: center;
+				justify-content: center;
+			}
+		}
+		.columns {
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			
+			& + .columns {
+				border-top: 1px solid $color2;
+				
+				@media only screen and (min-width: $break-small) {
+					border-top: 0;
+					border-left: 1px solid $color2;
+				}
+			}
+		}
+	}
+	&.no-borders {
+		.row {
+			.columns + .columns {
+				border: 0;
+				
+				@media only screen and (min-width: $break-small) {
+					border: 0;
+				}
+			}
+		}
+	}
+	&.left-align-text {
+		.widget {
+			text-align: left;
+		}
+	}
+	p {
+		font-size: 13px;
+	}
+	.widget {
+		border: 0;
+		padding: 30px 15px;
+		text-align: center;
+		
+		@media only screen and (min-width: $break-small) {
+			padding: 40px;
+		}
+		&>strong {
+			font-size: 11px;
+			top: 0;
+			margin-bottom: 20px;
+			span {
+				background: transparent;
+				color: $color1;
+			}	
+		}
+		&.style3 {
+			&>strong {
+				text-align: left;
+				border: 0;
+				height: auto;
+				span {
+					padding: 0;	
+				}
+			}
+		}
+		ul.menu li {
+			a {
+				font-size: 10px;
+				color: #878787;
+				text-transform: uppercase;
+			}
+			.submenu {
+				border: 0;
+				padding: 0;
+				margin: 0;
+			}
+		}
+		&.widget_latestimages,
+		&.widget_sharedimages {
+			text-align: left;
+		}
+	}
+}
+#subfooter {
+	border-top: 1px solid $color2;
+	padding: 30px 0;
+	color: #6a6a6a;
+	font-weight: 400;
+	text-align: center;
+	p {
+		font-size: 10px;	
+	}
+	a {
+		display: inline-block;
+		margin: 0 10px;
+		font-size: 10px;
+		
+		&.icon-1x {
+			font-size: 16px;
+		}
+	}
+	.menu {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		
+		li {
+			display: inline-block;	
+			text-transform: uppercase;
+			
+			a {
+				color: $color1;
+				font-size: 12px;
+			}
+		}
+	}
+}

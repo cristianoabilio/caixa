@@ -1,0 +1,190 @@
+.post-gallery-lightbox {
+	.mfp-content {
+		height: 100%;
+		max-height: 100%;
+		@extend .admin-style;
+	}
+	.mfp-arrow {
+		display: none;
+	}
+}
+.post-gallery-content {
+	height: 100%;
+	padding-top: 110px;
+	.lightbox-header {
+		background: #fff;
+		padding: 10px 15px;
+		height: 110px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		
+		@media only screen and (min-width: $break-small) {
+			padding: 10px 20px;
+		}
+		@media only screen and (min-width: $break-medium) {
+			padding: 10px 30px;
+		}
+		.logolink {
+			display: block;
+			line-height: 90px;
+			.logoimg {
+				max-height: 40px;
+			}
+		}
+		.lightbox-close {
+			float: right;
+			display: block;
+			line-height: 90px;
+			font-size: 12px;
+			font-weight: 600;
+			text-transform: uppercase;
+			border: 0;
+			outline: 0;
+			background: none;
+			cursor: pointer;
+			span {
+				display: inline-block;
+				margin-right: 15px;
+				font-size: 20px;
+				font-weight: 400;
+				position: relative;
+				top: 1px;	
+			}
+		}
+		.columns {
+			display: table;
+			
+			&>.lightbox-close,
+			&>.logolink {
+				display: table-cell;
+				vertical-align: middle;	
+			}
+		}
+	}
+	.row {
+		height: 100%;
+		.columns {
+			height: auto;
+			
+			@media only screen and (min-width: $break-small) {
+				height: 100%;
+			}
+			.arrow {
+				display: inline-block;
+				width: 58px;
+				height: 58px;
+				border-radius: 29px;
+				text-align: center;
+				line-height: 58px;
+				font-size: 24px;
+				background: rgba(51,51,51,0.7);
+				color: rgba(255,255,255,0.4);
+				
+				&:hover {
+					background: $color3;
+					color: rgba(255,255,255,1);	
+				}
+				&.prev {
+					.fa {
+						margin-right: 2px;
+					}
+				}
+				&.next {
+					.fa {
+						margin-left: 2px;
+					}
+				}
+				& + span {
+					color: #767676;
+					font-size: 13px;
+					margin-left: 15px;
+					em {
+						color: #d5d5d5;
+						font-style: normal;
+						font-weight: 600;	
+					}
+				}
+			}
+			&.image {
+				padding: 0;
+				
+				@media only screen and (min-width: $break-small) {
+					padding: 25px;
+				}
+				@media only screen and (min-width: $break-medium) {
+					padding: 35px;
+				}
+				@media only screen and (min-width: $break-large) {
+					padding: 50px;
+				}
+					
+				.attachment-full {
+					max-height: 100%;
+					width: auto;
+				}
+				.arrow {
+					display: block;
+					position: absolute;
+					top: 50%;
+					margin-top: -29px;
+					&.prev {
+						left: 15px;
+					}
+					&.next {
+						right: 15px;
+					}
+					@media only screen and (min-width: $break-small) {
+						display: none;
+					}
+				}
+			}
+			&.image-text {
+				background: #1d1d1d;
+				padding: 15px 15px;
+				
+				@media only screen and (min-width: $break-small) {
+					padding: 25px;
+					overflow-y: scroll;
+				}
+				@media only screen and (min-width: $break-medium) {
+					padding: 35px;
+				}
+				@media only screen and (min-width: $break-large) {
+					padding: 50px;
+				}
+				.arrow,
+				.meta {
+					display: none;
+					@media only screen and (min-width: $break-small) {
+						display: inline-block;
+					}
+				}
+				
+				h5 {
+					color: #fff;
+					font-weight: 600;
+					font-size: 18px;
+					margin: 15px 0;
+					
+					@media only screen and (min-width: $break-small) {
+						margin: 40px 0 15px;
+					}
+				}
+				h6 {
+					color: #fff;	
+				}
+				p {
+					color: #cfcfcf;	
+				}
+				small {
+					font-size: 12px;
+					color: #767676;	
+				}
+				
+				
+			}
+		}
+	}
+}

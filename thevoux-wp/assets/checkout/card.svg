@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="192px" height="138px" viewBox="0 0 192 138" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4.00056647,5.63079806 L146.396563,5.63079806 L150.898272,0 L155.82625,5.63079806 L170.000566,5.63079806 C172.209705,5.63079806 174.000566,7.42165907 174.000566,9.63079806 L174.000566,117 C174.000566,119.209139 172.209705,121 170.000566,121 L4,121.00002 C1.790861,121.00002 2.56065926e-13,119.209159 2.55795385e-13,117.00002 C2.55795384e-13,117.000013 1.63287162e-11,117.000007 4.84736695e-11,117 L0.000566473526,9.63079807 C0.000577320565,7.42166674 1.79143514,5.63081771 4.00056647,5.63081771 Z" id="path-1"></path>
+        <filter x="-8.3%" y="-10.3%" width="116.7%" height="124.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.215686275   0 0 0 0 0.22745098   0 0 0 0 0.231372549  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Checkout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="entrega" transform="translate(-476.000000, -1600.000000)">
+            <g id="Group-7" transform="translate(484.999434, 1606.000734)">
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="card" transform="translate(12.000566, 16.999266)">
+                    <rect id="Rectangle" fill="#FAAF45" x="0" y="0" width="150" height="93" rx="8"></rect>
+                    <rect id="Rectangle" fill="#373A3B" x="0" y="19" width="150" height="19"></rect>
+                    <rect id="Rectangle" fill="#FAFAFA" x="12" y="49" width="127" height="31"></rect>
+                    <text id="010101" font-family="Helvetica" font-size="14" font-weight="normal" letter-spacing="3" fill="#848889">
+                        <tspan x="26" y="69">01010</tspan>
+                        <tspan x="79.9306641" y="69">1</tspan>
+                    </text>
+                    <rect id="Rectangle" stroke="#CC3C3C" stroke-width="2" x="96" y="54" width="37" height="21"></rect>
+                    <text id="123" font-family="Helvetica" font-size="14" font-weight="normal" letter-spacing="3" fill="#373A3B">
+                        <tspan x="102" y="69">123</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
